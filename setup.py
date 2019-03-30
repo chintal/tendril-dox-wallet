@@ -14,7 +14,8 @@ with open('README.rst') as readme_file:
     readme = readme_file.read()
 
 requirements = [
-    'tendril-utils-core>=0.1.4',
+    'tendril-utils-core>=0.1.9',
+    'tendril-config>=0.1.1',
     'fs==0.5.4',
 ]
 
@@ -24,7 +25,7 @@ test_requirements = [
 
 setup(
     name='tendril-dox-wallet',
-    version='0.1.1',
+    version='0.1.2',
     description="Tendril Document Wallet",
     long_description=readme,
     author="Chintalagiri Shashank",
