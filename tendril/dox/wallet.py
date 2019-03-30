@@ -22,8 +22,8 @@ Core Dox Wallet Module (:mod:`tendril.dox.wallet`)
 
 This module provides a simple wallet for 'standard' documents.
 These documents would typically be stored within the
-:data:`tendril.utils.config.DOCUMENT_WALLET_ROOT`, and defined by the
-:data:`tendril.utils.config.DOCUMENT_WALLET` dictionary. Each `key, value`
+:data:`tendril.config.legacy.DOCUMENT_WALLET_ROOT`, and defined by the
+:data:`tendril.config.legacy.DOCUMENT_WALLET` dictionary. Each `key, value`
 pair in the dictionary is a `key, filename` pair.
 
 This module is intended to be used by other ``tendril.dox`` modules to
@@ -47,9 +47,9 @@ from fs.errors import NoSysPathError
 from fs.rpcfs import RPCFS
 from fs.rpcfs import RemoteConnectionError
 
-from tendril.utils.config import INSTANCE_ROOT
-from tendril.utils.config import DOCUMENT_WALLET
-from tendril.utils.config import DOCUMENT_WALLET_ROOT
+from tendril.config.legacy import INSTANCE_ROOT
+from tendril.config.legacy import DOCUMENT_WALLET
+from tendril.config.legacy import DOCUMENT_WALLET_ROOT
 
 from tendril.utils.fsutils import temp_fs
 from tendril.utils import log
@@ -102,8 +102,8 @@ def is_in_wallet(fpath):
     """
     Checks whether a specified path points to a document in the wallet.
     This function only checks whether the path is within the
-    :data:`tendril.utils.config.DOCUMENT_WALLET_ROOT`, and not whether the
-    document is defined in the :data:`tendril.utils.config.DOCUMENT_WALLET`
+    :data:`tendril.config.legacy.DOCUMENT_WALLET_ROOT`, and not whether the
+    document is defined in the :data:`tendril.config.legacy.DOCUMENT_WALLET`
     dictionary.
 
     The intended use of this function is alongside PDF merge operations
