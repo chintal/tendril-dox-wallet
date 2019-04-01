@@ -47,9 +47,9 @@ from fs.errors import NoSysPathError
 from fs.rpcfs import RPCFS
 from fs.rpcfs import RemoteConnectionError
 
-from tendril.config.legacy import INSTANCE_ROOT
-from tendril.config.legacy import DOCUMENT_WALLET
-from tendril.config.legacy import DOCUMENT_WALLET_ROOT
+from tendril.config import INSTANCE_ROOT
+from tendril.config import DOCUMENT_WALLET
+from tendril.config import DOCUMENT_WALLET_ROOT
 
 from tendril.utils.fsutils import temp_fs
 from tendril.utils import log
