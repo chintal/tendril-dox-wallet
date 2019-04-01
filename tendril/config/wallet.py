@@ -24,4 +24,5 @@ config_elements_wallet = [
 
 def load(manager):
     logger.debug("Loading {0}".format(__name__))
-    manager.load_elements(config_elements_wallet)
+    manager.load_elements(config_elements_wallet,
+                          doc="Document Wallet Configuration")
