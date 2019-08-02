@@ -15,6 +15,7 @@ with open('README.rst') as readme_file:
 
 requirements = [
     'tendril-utils-core>=0.1.11',
+    'tendril-utils-fsutils>=0.1.11',
     'tendril-config>=0.1.3',
     'fs==0.5.4',
 ]
