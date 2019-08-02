@@ -26,7 +26,7 @@ test_requirements = [
 
 setup(
     name='tendril-dox-wallet',
-    version='0.1.4',
+    version='0.1.5',
     description="Tendril Document Wallet",
     long_description=readme,
     author="Chintalagiri Shashank",
